@@ -7,12 +7,13 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url('../backround.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url('../images/backround.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -83,15 +84,17 @@ nav img{
     border: 0.125em solid #fff;
     border-radius: 1.875em;
     padding: 0.9375em 2.1875em;
-    font-size: 0.9375em;
+    font-size: 1em;
+    font-weight: 700;
     background: transparent;
     position: relative;
     cursor: pointer;
+    transition: 0.5s ;
 }
 .btn-contact:hover{
     border:2px solid var(--clr-primary);
     background: var(--clr-primary);
-    transition: 1s;
+    transition: 0.5s ;
 }
 
 nav .fa{
@@ -119,10 +122,69 @@ nav .fa{
     nav .fa{
         display: block;
         color: #fff;
-        margin: 0.625em;
+        margin: 0.725em;
         font-size: 1.375em;
         cursor: pointer;
     }
 
 
+}
+
+/* the ABOUT section */
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;;
+    padding-top: 100px;
+    
+}
+
+.about h1{
+    font-size: 3.2em;
+    font-weight: 700;
+}
+.about p{
+    color: #777;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: normal;
+    padding: 15px;
+}
+
+/* services we offer */
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.services{
+    flex-basis: 32%;
+    background: #ffefe0;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 20px 12px ;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.services h3{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 800;
+    margin: 15px 0;
+    transition: 0.4s;
+}
+
+.services:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 700px){
+    .row{
+        flex-flow: column;
+
+    }
 }
