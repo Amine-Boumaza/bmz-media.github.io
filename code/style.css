@@ -154,7 +154,8 @@ nav .fa{
 }
 
 .servi-list img{
-width: 100%;
+    width: 100%;
+    display: block;
 }
 
 .layer{
@@ -190,4 +191,10 @@ width: 100%;
 .layer:hover h3 {
     bottom: 45%;
     opacity: 1;
+}
+
+@media (max-width: 500px) {
+    .row{
+        flex-direction: column;
+    }
 }
