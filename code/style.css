@@ -139,6 +139,16 @@ nav .fa{
     padding-top: 50px;
 }
 
+.services h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+.services p{
+    font-size: 20px;
+    font-weight: 550;
+}
+
 .row{
     margin-top: 5%;
     display: flex;
@@ -210,15 +220,17 @@ nav .fa{
     background: #ffffff;
     display: grid;
     grid-gap: 10px;
-    grid-tempLate-columns: repeat ( auto ,minmax(300px,1fr));
-    grid-auto-rows: 300px;
-    grid-auto-columns: 500px;
+    grid-tempLate-columns: repeat ( auto ,minmax(10px,1fr));
+    grid-auto-rows: 400px;
+    /* grid-auto-columns: 485px; */
     grid-auto-flow: dense;
 }
 
 .portfolio h1{
     text-align: center;
-    margin: 2%;
+    font-weight: 650;
+    font-size: 35px;
+    margin-top: 2%;
 }
 
 .w-1{
