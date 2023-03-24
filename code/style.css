@@ -105,10 +105,10 @@ nav .fa{
     .text-box h1{
         font-size:  1.5625em;
     }
-    .nav-links ul li{
+    /* .nav-links ul li{
         display: block;
-    }
-    .nav-links{
+    } */
+    /* .nav-links{
         position: absolute;
         background: var(--clr-primary);
         height: 100vh;
@@ -118,13 +118,17 @@ nav .fa{
         text-align:left ;
         z-index:2;
         transition: 1s;
-    }
-    nav .fa{
+    } */
+    /* nav .fa{
         display: flex;
         color: #fff;
         margin: 0.725em;
         font-size: 1.375em;
         cursor: pointer;
+    } */
+
+    nav li{
+
     }
 
 
@@ -213,16 +217,17 @@ nav .fa{
     padding-bottom: 10px;
     width: 100%;
     /* margin:  auto; */
-    margin: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     text-align: center;
+
     padding-top: 50px;
     background: #ffffff;
     display: grid;
-    grid-gap: 10px;
-    grid-tempLate-columns: 1fr, 1fr, 1fr;
+    grid-gap: 5px;
+    grid-tempLate-columns: repeat(3,1fr);
     grid-auto-rows: 400px;
-    
-    grid-auto-flow: dense;
+    grid-auto-flow: auto;
 }
 
 .portfolio h1{
@@ -236,6 +241,7 @@ nav .fa{
     grid-row: span 2 ;
     grid-column: span 1;
     /* object-position: 25% 75%; */
+    
 }
 
 .v-stretch{
@@ -248,32 +254,32 @@ nav .fa{
     grid-row: span 2;
 }
 
-.big-stretch{
-    grid-row: span 2;
-    grid-column: span 3;
-}
+/* .big-stretch{
+    grid-row: span ;
+    grid-column: span ;
+} */
 
 .portfolio div img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* object-position: center; */
+    object-position: center;
 }
 
 @media (max-width: 600px) {
-    /* .w-1{
+    .w-1{
         grid-column: span 1;
         grid-row: span 1;
-    } */
+    }
 
     .v-stretch{
         grid-row: span 1;
-        /* grid-column: span 1; */
+        grid-column: span 1;
     }
 
     .h-stretch{
         grid-row: span 1;
-        /* grid-column: span 1; */
+        grid-column: span 1;
     }
 
     .big-stretch{
