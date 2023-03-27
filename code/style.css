@@ -107,7 +107,7 @@ nav .fa {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .text-box h1 {
         font-size: 1.5625em;
     }
@@ -198,7 +198,7 @@ nav .fa {
 
 .layer h3 {
     text-align: center;
-    
+
     margin: 10px 0;
     width: 100%;
     font-weight: 400;
@@ -217,7 +217,7 @@ nav .fa {
     opacity: 1;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .row {
         flex-direction: column;
     }
@@ -264,10 +264,10 @@ nav .fa {
     grid-row: span 2;
 }
 
-/* .big-stretch{
-    grid-row: span ;
-    grid-column: span ;
-} */
+.big-stretch {
+    grid-row: span 1;
+    grid-column: span 1;
+}
 
 .portfolio div img {
     width: 100%;
@@ -276,7 +276,7 @@ nav .fa {
     object-position: center;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .w-1 {
         grid-column: span 1;
         grid-row: span 1;
@@ -298,42 +298,78 @@ nav .fa {
     }
 }
 
+.contact {
+    width: 100%;
+    padding-bottom: 10%;
+    background: linear-gradient(to bottom, #ffffff, var(--clr-primary));
+    background-position: 0% 30%;
 
-form {
-    width: 80%;
-    max-width: 500px;
-    margin: 0 auto;
 }
 
-form h1 {
+.contact form {
+    width: 80%;
+    height: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+
+}
+
+.contact form h1 {
     text-align: center;
     font-weight: 650;
     font-size: 35px;
     margin-top: 2%;
 }
 
-label {
+.contact form label {
     display: block;
     margin-top: 20px;
 }
 
-input,
-textarea {
+.contact form input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--clr-primary);
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.contact form input:focus {
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    outline: none;
+}
+
+.contact form textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 70px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 2px solid var(--clr-primary);
     border-radius: 5px;
     margin-top: 5px;
     font-size: 16px;
 }
 
-button[type="submit"] {
+.contact form textarea:focus {
+    border: 2px solid #000;
+    outline: none;
+
+}
+
+
+.contact button[type="submit"] {
     display: block;
+    margin: 0 auto;
     margin-top: 20px;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: var(--clr-primary);
     color: #fff;
     font-size: 16px;
     cursor: pointer;
