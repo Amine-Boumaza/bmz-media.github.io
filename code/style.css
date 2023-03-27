@@ -306,20 +306,23 @@ nav .fa {
 
 }
 
+.contact h1 {
+    text-align: center;
+    font-weight: 650;
+    font-size: 35px;
+    margin-top: 2%;
+}
+
+
 .contact form {
     width: 80%;
     height: 100%;
     max-width: 500px;
     margin: 30px auto;
 
+
 }
 
-.contact form h1 {
-    text-align: center;
-    font-weight: 650;
-    font-size: 35px;
-    margin-top: 2%;
-}
 
 .contact form label {
     display: block;
@@ -347,6 +350,8 @@ nav .fa {
     min-width: 100%;
     max-width: 100%;
     min-height: 70px;
+    max-height: 120px;
+
     padding: 10px;
     background-color: #ffffff;
     border: 2px solid var(--clr-primary);
@@ -373,4 +378,13 @@ nav .fa {
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+}
+
+.contact .button-area {
+    text-align: center;
+    color: #fff;
+}
+
+.contact .button-area span {
+    display: none;
 }
