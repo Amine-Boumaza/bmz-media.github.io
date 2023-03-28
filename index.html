@@ -155,30 +155,20 @@
 
     <section class="contact">
         <h1>CONTACT US</h1>
-        <form action="message.php">
-            <div class="dbl-field">
-                <div class="field">
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" placeholder="Enter your name" required>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xpzeyapn"
+            method="post">
 
-                </div>
-                <div class="field">
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" placeholder="Enter your email" required>
+            <label for="full-name">Full Name</label>
+            <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+            <label for="email-address">Email Address</label>
+            <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+            <label for="message">Message</label>
+            <textarea rows="5" name="message" id="message"
+                placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus."
+                required=""></textarea>
+            <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 
-                </div>
-            </div>
-
-            <div class="message">
-                <label for="message">Message:</label>
-                <textarea placeholder="Write your message" name="message" required></textarea>
-            </div>
-
-            <div class="button-area">
-
-                <button type="submit">Send Message</button>
-                <span>Sending your message...</span>
-            </div>
+            <button type="submit" value="Submit">submit message</button>
         </form>
         </div>
     </section>
