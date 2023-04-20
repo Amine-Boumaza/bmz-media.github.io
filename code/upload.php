@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     // Store uploaded image
     $name = $_POST['name'];
-    $image_path = $_FILES['image']['name'];
+    $image_path = '../uploads/' . $_FILES['image']['name'];
     $image_tmp_name = $_FILES['image']['tmp_name'];
     move_uploaded_file($image_tmp_name, $image_path);
     $story = $_POST['story'];
@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $sql = "INSERT INTO images (url, name, story) VALUES ('$image_path', '$name', '$story')";
     if (mysqli_query($conn, $sql)) {
-        header('Location: index.php');
+        header('Location: /index.php');
         exit();
     } else {
         echo 'Error: ' . $sql . '<br>' . mysqli_error($conn);

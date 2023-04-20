@@ -152,51 +152,42 @@
     </section>
 
     <section id="clients" class="clients">
-        <?php
-        include 'D:\my codes\photography website\code\connect.php';
-        // Fetch images from database
-        $sql = "SELECT * FROM images";
-        $result = mysqli_query($conn, $sql);
-        $images = array();
-        if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                $images[] = $row;
-        ?>
 
-                <div class="card-row">
-                    <div class='card 1'>
-                        <img src='<?php echo $images[0]["url"]; ?>' alt='<?php echo $images[0]["name"]; ?>'>
-                        <div class='caption'>
-                            <h4><?php echo $images[0]["name"]; ?></h4>
-                            <p><?php echo $images[0]["story"]; ?></p>
-                        </div>
-                    </div>
-                    <div class='card 2'>
-                        <img src='<?php echo $images[1]["url"]; ?>' alt='<?php echo $images[1]["name"]; ?>'>
-                        <div class='caption'>
-                            <h4><?php echo $images[1]["name"]; ?></h4>
-                            <p><?php echo $images[1]["story"]; ?></p>
-                        </div>
-                    </div>
-                    <div class='card 3'>
-                        <img src='<?php echo $images[2]["url"]; ?>' alt='<?php echo $images[2]["name"]; ?>'>
-                        <div class='caption'>
-                            <h4><?php echo $images[2]["name"]; ?></h4>
-                            <p><?php echo $images[2]["story"]; ?></p>
-                        </div>
-                    </div>
-                </div>
+        <div class="img-row">
+            <?php
+            // Connect to database
+            include "D:\my codes\photography website\code\connect.php";
 
-        <?php
+            // Fetch images from database
+            $sql = "SELECT * FROM images ORDER BY RAND() LIMIT 3";
+            $result = mysqli_query($conn, $sql);
+            if (mysqli_num_rows($result) > 0) {
+
+                $count = 1;
+                while ($row = mysqli_fetch_assoc($result)) {
+            ?>
+
+                    <div class='<?php echo "card " . $count; ?>'>
+                        <img src='<?php echo $row["url"]; ?>' alt='<?php echo $row["name"]; ?>'>
+                        <div class='caption'>
+                            <h4><?php echo $row["name"]; ?></h4>
+                            <p><?php echo $row["story"]; ?></p>
+                        </div>
+                    </div>
+
+            <?php
+                    $count++;
+                }
+            } else {
+                echo "No images found.";
             }
-        } else {
-            echo "No images found.";
-        }
 
-        mysqli_close($conn);
-        ?>
-        <button href></button>
-        <a href="form.html">Add Image</a>
+            // Close database connection
+            mysqli_close($conn);
+            ?>
+        </div>
+
+        <a href="/code/form.html">Add Image</a>
 
     </section>
 
