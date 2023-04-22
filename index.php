@@ -158,7 +158,7 @@
             // Connect to database
             include "D:\my codes\photography website\code\connect.php";
 
-            // Fetch images from database
+
             $sql = "SELECT * FROM images ORDER BY RAND() LIMIT 3";
             $result = mysqli_query($conn, $sql);
             if (mysqli_num_rows($result) > 0) {

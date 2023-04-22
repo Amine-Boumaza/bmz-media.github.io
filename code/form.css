@@ -1,0 +1,104 @@
+:root {
+    --clr-primary: #d57a20;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.upload {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url('https://raw.githubusercontent.com/Amine-Boumaza/photography/master/images/backround.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.upload form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.upload form label {
+    font-weight: 650;
+    font-size: 20px;
+    color: #fff;
+}
+
+.upload form label[for="image"] {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 3% auto;
+}
+
+.upload form input {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid var(--clr-primary);
+    margin-top: 5px;
+    font-size: 16px;
+    margin: 3% auto;
+    color: #fff;
+}
+
+.upload form input:focus {
+    border: none;
+    border-bottom: 2px solid #000;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+}
+
+.upload form input[type="file"] {
+    display: none;
+}
+
+.upload form textarea {
+    min-width: 50%;
+    max-width: 50%;
+    min-height: 70px;
+    max-height: 120px;
+    margin: 3% auto;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid var(--clr-primary);
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.upload form textarea:focus {
+    border: 2px solid #000;
+    outline: none;
+    background-color: #ccc;
+}
+
+.upload button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--clr-primary);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -11,28 +11,20 @@
         rel="stylesheet">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
         type='text/css'>
-    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form1.css">
     <title>Document</title>
 </head>
 
 <body>
     <section class="upload">
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            <label for="name">Name:</label>
-            <input type="text" name="name" required><br>
 
-            <label for="story">Story:</label>
-            <textarea name="story"></textarea><br>
-
-            <label for="">Image:</label>
-            <label for="image">
-                <i class="fa fa-cloud-upload"></i> Choose File
-                <input id="image" type="file" name="image" required>
-            </label>
+        <label for="image" class="file-img">
+            <i class="fa fa-cloud-upload"></i> Choose File
+            <input id="image" type="file" name="file" />
+        </label>
 
 
-            <button type="submit" value="Upload">upload</button>
-        </form>
+
     </section>
 </body>
 

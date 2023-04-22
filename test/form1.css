@@ -1,0 +1,15 @@
+.file-img {
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.custom-file-upload:hover {
+    background-color: #e0e0e0;
+}
