@@ -17,7 +17,7 @@
 <body>
     <section id="HOME" class="header">
         <nav>
-            <a href="index.html"><img src="https://raw.githubusercontent.com/Amine-Boumaza/photography/master/images/logo.png" alt="logo"></a>
+            <a href="index.php"><img src="https://raw.githubusercontent.com/Amine-Boumaza/photography/master/images/logo.png" alt="logo"></a>
             <div class="nav-links" id="navLinks">
 
 
