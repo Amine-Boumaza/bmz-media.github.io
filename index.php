@@ -60,7 +60,7 @@
                 </div>
             </div>
             <div class="servi-list">
-                <img src="https://raw.githubusercontent.com/Amine-Boumaza/photography/master/images/train portrait.jpg" alt="">
+                <img src="https://raw.githubusercontent.com/Amine-Boumaza/photography/master/images/wedding.jpg" alt="">
                 <div class="layer">
                     <h3>PORTRAITS</h3>
                 </div>
