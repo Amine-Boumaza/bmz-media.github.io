@@ -13,7 +13,7 @@
 .upload {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url('https://raw.githubusercontent.com/Amine-Boumaza/photography/master/images/backround.jpg');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)), url('https://raw.githubusercontent.com/Amine-Boumaza/photography/master/images/road pic.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -31,6 +31,10 @@
     font-weight: 650;
     font-size: 20px;
     color: #fff;
+}
+
+.upload form label[for="i"] {
+    margin-bottom: -1%;
 }
 
 .upload form label[for="image"] {

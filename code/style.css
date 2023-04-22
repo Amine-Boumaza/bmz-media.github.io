@@ -278,8 +278,7 @@ nav .fa {
 }
 
 .big-stretch {
-    grid-row: span 1;
-    grid-column: span 1;
+    display: none;
 }
 
 .portfolio div img {
@@ -290,23 +289,27 @@ nav .fa {
 }
 
 @media only screen and (max-width: 768px) {
+    .pics {
+        grid-template-columns: 1fr;
+    }
+
     .w-1 {
         grid-column: span 1;
-        grid-row: span 1;
+        /* grid-row: span 1; */
     }
 
     .v-stretch {
-        grid-row: span 1;
+        /* grid-row: span 1; */
         grid-column: span 1;
     }
 
     .h-stretch {
-        grid-row: span 1;
+        /* grid-row: span 1; */
         grid-column: span 1;
     }
 
     .big-stretch {
-        grid-row: span 1;
+        /* grid-row: span 1; */
         grid-column: span 1;
     }
 }
