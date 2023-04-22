@@ -112,6 +112,19 @@ nav .fa {
         font-size: 1.5625em;
     }
 
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav img {}
+
+    .nav-links ul li {
+        display: none;
+    }
+
+
     /* .nav-links ul li{
         display: block;
     } */
@@ -330,7 +343,11 @@ nav .fa {
 }
 
 
-
+@media only screen and (max-width: 768px) {
+    .img-row {
+        flex-direction: column;
+    }
+}
 
 
 
@@ -339,10 +356,10 @@ nav .fa {
     width: 100%;
     border: none;
     padding-top: 2%;
-    padding-bottom: 5%;
-    background: linear-gradient(to bottom, #ffffff, var(--clr-primary));
-    background-position: 0% 20%;
-
+    padding-bottom: 10%;
+    background-image: linear-gradient(to bottom, #ffffff, var(--clr-primary));
+    background-position: 0% 30%;
+    position: relative;
 }
 
 .contact h1 {
@@ -358,8 +375,6 @@ nav .fa {
     height: 100%;
     max-width: 500px;
     margin: 30px auto;
-
-
 }
 
 
@@ -412,18 +427,18 @@ nav .fa {
     margin-top: 20px;
     padding: 10px;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     background-color: var(--clr-primary);
     color: #fff;
     font-size: 16px;
     cursor: pointer;
 }
 
-/* .contact .button-area {
+.contact .button-area {
     text-align: center;
     color: #fff;
 }
 
 .contact .button-area span {
     display: none;
-} */
+}

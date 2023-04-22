@@ -152,7 +152,7 @@
     </section>
 
     <section id="clients" class="clients">
-
+        <h1>CLIENTS PICTURES</h1>
         <div class="img-row">
             <?php
             // Connect to database
