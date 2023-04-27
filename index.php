@@ -187,7 +187,7 @@
             ?>
         </div>
 
-        <a href="/code/form.html">Add Image</a>
+        <a href="/code/form.html" class="image-btn">Add Image</a>
 
     </section>
 
