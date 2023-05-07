@@ -1,15 +1,60 @@
-.file-img {
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
-    border: 1px solid #ccc;
+.card {
+    margin: 10px;
+    padding: none;
+    box-shadow: 0 0 0.5em #000000;
+    flex-basis: 31%;
+    position: relative;
+    overflow: hidden;
     border-radius: 4px;
-    background-color: #f2f2f2;
-    color: #333;
-    font-size: 16px;
-    font-weight: bold;
 }
 
-.custom-file-upload:hover {
-    background-color: #e0e0e0;
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.caption {
+    background: rgba(4, 9, 30, 0.8);
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    transition: 0.3s;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.caption h4 {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.caption p {
+    margin: 10px 0;
+    font-size: 16px;
+    max-height: 50%;
+    overflow: hidden;
+}
+
+.caption .see-more {
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.caption .see-less {
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px;
+    display: none;
 }

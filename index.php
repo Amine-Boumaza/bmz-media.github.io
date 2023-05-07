@@ -31,7 +31,7 @@
 
         </nav>
         <div class="text-box">
-            <h1>Lorem ipsum dolor sit amet consectetur</h1>
+            <h1>BMZ photography</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo mollitia obcaecati eum corporis et
                 repellendus unde itaque vero ipsam quis ab at commodi illum, eaque fuga illo excepturi enim ullam!</p>
             <a href="#CONTACT" class="btn-contact">CONTACT US</a>
@@ -134,14 +134,14 @@
             </div>
 
             <div class="w-1">
+
+            </div>
+
+            <div class="h-stretch">
                 <img src="https://raw.githubusercontent.com/Amine-Boumaza/photography/master/images/backround.jpg" alt="">
             </div>
 
-            <!-- <div class="big-stretch">
-                <img src="" alt="">
-            </div>
-
-            <div class="w-1">
+            <!--<div class="w-1">
                 <img src="" alt="">
             </div>
 
@@ -166,7 +166,7 @@
                 $count = 1;
                 while ($row = mysqli_fetch_assoc($result)) {
             ?>
-
+            
                     <div class='<?php echo "card " . $count; ?>'>
                         <img src='<?php echo $row["url"]; ?>' alt='<?php echo $row["name"]; ?>'>
                         <div class='caption'>
@@ -213,6 +213,7 @@
     <!-- toogle the menu bar -->
 
     <script src="script.js"></script>
+
 
 
 </body>

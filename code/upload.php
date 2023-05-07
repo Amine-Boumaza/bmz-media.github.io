@@ -2,10 +2,7 @@
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-    $conn = mysqli_connect('127.0.0.1', 'root', '', 'client');
-    if (!$conn) {
-        die('Connection failed: ' . mysqli_connect_error());
-    }
+    include 'connect.php';
 
     // Store uploaded image
     $name = $_POST['name'];

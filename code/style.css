@@ -79,7 +79,8 @@ nav img {
 
 .text-box p {
     margin: 0.625em 0 2.5em;
-    font-size: 0.875em;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .btn-contact {
@@ -192,6 +193,10 @@ nav .fa {
     height: auto;
     display: block;
 }
+
+
+
+
 
 .layer {
     background: transparent;
@@ -328,46 +333,113 @@ nav .fa {
     justify-content: space-around;
     height: center;
     align-items: center;
+    padding: none;
 }
 
 
 .card {
     margin: 10px;
-    padding: 10px;
-    /* box-shadow: 0 0 5px #ddd; */
-    flex-basis: 30%;
+    padding: none;
+    box-shadow: 0 0 0.5em #000000;
+    flex-basis: 31%;
     position: relative;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    max-height: 800px;
     display: block;
 }
+
+.caption {
+    background: rgba(4, 9, 30, 0.448);
+    height: 60px;
+    width: calc(100% - 20px);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    padding: 10px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.caption h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.caption p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
 
 .image-btn {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 0.125em solid #fff;
+    color: #000;
+    border: 0.125em solid #000;
     border-radius: 1.875em;
     padding: 0.9375em 2.1875em;
     font-size: 1em;
     font-weight: 700;
-    background: transparent;
+    /* background: transparent; */
     position: relative;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
+    margin: 1% auto;
+}
+
+.image-btn:hover {
+    background-color: var(--clr-primary);
+    border-color: #fff;
+    color: #fff;
 }
 
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .img-row {
         flex-direction: column;
     }
-}
 
+    .card {
+        height: 250px;
+        width: 80%;
+        flex-basis: 80%;
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        /* height: auto; */
+        /* width: 100%; */
+
+    }
+
+    .caption {
+        height: auto;
+        padding: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .caption h4 {
+        margin-bottom: 5px;
+    }
+
+    .image-btn {
+        background: var(--clr-primary);
+        color: #fff;
+        border-color: #fff;
+    }
+}
 
 
 
@@ -375,7 +447,7 @@ nav .fa {
     width: 100%;
     border: none;
     padding-top: 2%;
-    padding-bottom: 10%;
+    padding-bottom: 7%;
     background-image: linear-gradient(to bottom, #ffffff, var(--clr-primary));
     background-position: 0% 30%;
     position: relative;
